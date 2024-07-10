@@ -1,0 +1,34 @@
+<!--
+    Elementlerin görünüşlerini değiştirmek için css (Cascading Style Sheets - basamaklı stil şablonu) kullanarak onları stilize edebiliriz
+    basamaklı denilmesinin nedeni, bir elemente uygulanan özellik içerisindeki elelmentler içinde geçerlidir (değiştirilmezse)
+
+    css kullanmak için 3 yol:
+    Elementin style niteliğini değiştirerek, (inline)
+    head elementinin içerisinde style elementi tanımlayarak, (internal)
+    link elementiyle bir css dosyasını bağlayarak (external)
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="deneme.css">
+        <style>
+            .deneme {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="color:white;"></p>
+    </body>
+</html>
+
+<!--
+    css özellikleri:
+    elementlerin css ile görsel olarak değiştirebileceğiniz birçok özelliği vardır, bazıları:
+
+    color: metin rengini belirler
+    font-family: metnin fontunu belirler
+    font-size: metnin boyutunu belirler
+    border: elementin etrafındaki kenarlığı belirlemek için
+    padding: elementin sınırlarına iç kısımda dolgu belirlemek için
+    margin: padding'in dış kısım için olan versiyonu
+-->
