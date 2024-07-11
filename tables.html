@@ -1,0 +1,164 @@
+<!--
+    table elementi ile tablolar oluşturulabilir
+    table elementi içerisinde tr elementi ile satırlar oluşturulur,
+    td elementi ile de sütunlar oluşturulur
+    eğer sütunlar başlık şeklinde olucaksa td yerine th elementi kullanılır
+-->
+<html>
+    <head>
+        <style>
+            table, th, td, tr {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Başlık 1</th>
+                <th>Başlık 2</th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!--
+    tablonun kenarlığını tek çizgi şeklinde ayarlamak için border-collapse kullanılabilir
+    sütunların altındaki sütunların sayısını belirlemek için colspan niteliği belirlenebilir
+    aynı şekilde satırlrın yanındaki sütunların sayısını belirlemek için rowspan niteliği belirlenebilir
+    tabloya başlık eklemek için caption elementi kullanılabilir
+-->
+<html>
+    <head>
+        <style>
+            table, th, td, tr {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Deneme Tablosu</caption>
+            <tr>
+                <th colspan="2">Başlık 1</th>
+                <th>Başlık 2</th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>e</td>
+                <td rowspan="2">f</td>
+            </tr>
+            <tr>
+                <td>g</td>
+                <td>h</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!--
+    tablolarda indexi çift veya tek olan satır ve sütunlar için nth-child ile farklı stillendirmeler yapılabilir
+-->
+<html>
+    <head>
+        <style>
+            tr:nth-child(even) {
+                background-color: yellow;
+            }
+
+            td:nth-child(even),td:nth-child(even) {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!--
+    tablo sütunlarını gruplandırmak için colgroup elementi kullanılır
+    gruplandırılan sütunlar stilize edilebilir
+    col elementi ile sütun grubu oluşturulur
+    dahil edilicek sütun sayısı için span niteliği belirlenir
+-->
+<html>
+    <head>
+        <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color: orange">
+                <col span="1" style="background-color: green">
+              </colgroup>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+    </body>
+</html>
