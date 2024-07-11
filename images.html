@@ -1,0 +1,86 @@
+<!--
+    img elementi ile web sayfalarına resim eklenebilir, gif'de olabilir
+    src niteliği resmin yolunu belirler
+    alt niteliği resin için alternatif bir metin belirler
+
+    width ve height css özelliği resmin boyutunu ayarlamak için kullanılır
+    float özelliği ise resmin bir metin içerisinde metne göre nerede konumlandırılacağını belirler
+-->
+<html>
+    <head>
+        <style>
+            img.deneme {
+                width: 200px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="deneme" src="https://t3.ftcdn.net/jpg/00/92/53/56/360_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg" alt="Deneme">
+    </body>
+</html>
+
+<!--
+    map elementi resim üzerinde tıklanabilir alanlar oluşturmak için kullanılabilir
+    ismi name niteliği ile belirlenir
+    kullanmak içinse img elementinin usemap niteliğine ismi başına # koyularak yazılmalıdır
+
+    tıklanabilir alanlar tanımlamak içinse area tag'ı kullanılır
+    tıklanabilir alanın şekli shape niteliği ile belirlenir:
+    rect: dikdörtgen alan
+    circle: dairesel alan
+    poly: çokgen alan
+    default: bütün alan
+    coords niteliği ile alanın koordinatları belirlenir
+    alt: alan için alternatif metin
+    href: yönlendirme
+-->
+<html>
+    <body>
+        <img src="https://t3.ftcdn.net/jpg/00/92/53/56/360_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_blank" alt="Example" title="Example" href="https://example.com" coords="6,128,674,10,713,232,46,350" shape="poly">
+        </map>
+    </body>
+</html>
+
+<!--
+    Elementlerin arkaplanını bir resim yapmak için background-image css özelliği kullanılır
+    Eğer resmin boyutu element boyutundan küçükse resim tekrar eder,
+    bu durumu engellemek için background-repeat css özelliği belirlenir
+    background-size ile resmin boyutu belirlenir
+    background-attachment ile de resmin sayfanın geri kalanıyla kaydırılabilir mi yoksa sabit mi olduğunu belirlemek için kullanılır
+-->
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url('https://t3.ftcdn.net/jpg/00/92/53/56/360_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+<!--
+    picture elementi ile görüntü kaynağını belirlemekte daha fazla esneklik sağlar
+    picture elementi içerisinde source elementi ile resim kaynağı belirlenebilir
+    source elementinde srcset niteliği kaynağın yolunu belirler
+    media niteliği ile resmin gösterilmesi için durumu belirlenir
+    eğer picture elementi içerisinde hiçbir source elementi eşleşmezse img elementi ile resim belilenebilir
+-->
+<html>
+    <body>
+        <picture>
+            <source media="(min-width: 650px)" srcset="https://t4.ftcdn.net/jpg/00/53/45/31/360_F_53453175_hVgYVz0WmvOXPd9CNzaUcwcibiGao3CL.jpg">
+            <source media="(min-width: 450px)" srcset="https://t3.ftcdn.net/jpg/05/17/82/24/360_F_517822417_cW17ljcETUNX8BylhlNesxWyhxHXO3Nc.jpg">
+            <img src="https://t3.ftcdn.net/jpg/00/92/53/56/360_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg" alt="Example" style="width:auto;">
+        </picture>
+    </body>
+</html>
