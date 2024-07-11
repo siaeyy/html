@@ -1,0 +1,86 @@
+<!--
+    liste elementleri oluşturmak için 3 tag vardır:
+    ul: sırasız lise
+    ol: sıralanmış liste
+    dl: açıklamalı liste
+
+    ul (unordered list) ve ol (ordered list) liste elementinde öğe oluşturmak için li (list item) tag'ı kullanılır
+    dl (description list) liste elementinde ise terim elementi oluşturmak için dt (description term),
+    açıklama elementi oluşturmak içinse dd kullanılır (description description ??)
+
+    listeler iç içe (nested) olabilir
+-->
+<html>
+    <body>
+        <ul>
+            <li>öğe</li>
+            <li>öğe</li>
+            <li>öğe</li>
+        </ul>
+        <ol>
+            <li>öğe</li>
+            <li>öğe</li>
+            <li>öğe</li>
+        </ol>
+        <dl>
+            <dt>terim</dt>
+            <dd>açıklama</dd>
+            <dt>terim</dt>
+            <dd>açıklama</dd>
+            <dt>terim</dt>
+            <dd>açıklama</dd>
+        </dl>
+    </body>
+</html>
+
+<!--
+    sırasız listelerin (ul - unordered list) öğelerinin başındaki sembol list-style-type css özelliği ile belirlenebilir
+    disc: nokta
+    circle: çember
+    square: kare
+    none: yok
+
+    css float özelliği belirlenerek liste öğeleri yanyana koyulabilir
+-->
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Bir</li>
+            <li>İki</li>
+        </ul>
+    </body>
+</html>
+
+<!--
+    sıralı listelerin (ol - ordered list) sıra şekli type niteliği ile değiştirilebilir
+    1: sıralamayı sayılarla yapar
+    A: sıralamayı büyük harflerle yapar
+    a: sıralamayı küçük harflerle yapar
+    I: sıralamayı büyük yazılmış roma rakamlarıyla yapar
+    i: sıralamayı küçük yazılmış roma rakamlarıyla yapar
+
+    sıralamanın kaçıncı sıradan başlayacağı start niteliği ile belirlenebilir
+-->
+<html>
+    <body>
+        <ol type="I" start="31">
+            <li>Öğe</li>
+            <li>Öğe</li>
+            <li>Öğe</li>
+        </ol>
+    </body>
+</html>
