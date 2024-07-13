@@ -1,0 +1,24 @@
+<!--
+    web sayfalarını daha dinamik bir hala getirmek, daha fazla işlevsellik sunmak için javascript kullanabiliriz
+    bunun için script elementi oluşturmamız gerekmektedir
+
+    eğer kullanıcı web sayfasının görüntülendiği tarayıcıda javascript'i engellediyse veya tarayıcı desteklemiyorsa
+    alternatif bir içerik sunmak için noscript elementi kullanılır
+
+    daha fazla javascript html element manipilasyonu js dokümantasyonunda
+-->
+<html>
+    <body>
+        <div id="deneme">
+            <p>sa</p>
+            <p>as</p>
+        </div>
+    </body>
+    <script>
+        document.getElementById("deneme").style.backgroundColor = "gray";
+        document.getElementById("deneme").style.width = "50%";
+    </script>
+    <noscript>
+        Javascript çalıştırılamıyor
+    </noscript>
+</html>
