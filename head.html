@@ -1,0 +1,30 @@
+<!--
+    head elementi dokümana ait meta verilerin bulunduğu bir elementtir
+    html start tag'ı ve body start tag'ı arasında yer alır
+
+    meta veriler, bir dokümanı tanımlayan üst bilgilerdir
+    örneğin: web sitesinin başlığı, dokümanın sahibi vesaire
+
+    head elementi içerisinde meta elementi tanımlayarak dokümanın karakter setini (utf-8),
+    açıklamasını, tarayıcı için anahtar kelimeleri, doküman sahibini, yenilenme süresini ve viewport'unu ayarlayabiliriz
+
+    base elementi bütün relative linkler için hedef belirtir
+    base elementi ya href ya target niteliği yada heer ikisinide içermelidir
+    dokümanda sadece bir adet base elementi olabilir
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Deneme1, Deneme2, Deneme3">
+        <meta name="description" content="Deneme Doküman">
+        <meta name="author" content="siaeyy">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- viewport'ta width kısmı sayfanın genişliğini cihazın ekran genişliğine ayarlar -->
+        <!-- initial-scale kısmı sayfa ilk yüklenirkenki zoom seviyesini 1 olarak ayarlar -->
+        <base href="https://google.com" target="_blank">
+    </head>
+    <body>
+        <p>sa</p>
+    </body>
+</html>
