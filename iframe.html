@@ -1,0 +1,25 @@
+<!--
+    iframe elementi web sayfasına başka bir web sayfasını gömmek için kullanılır
+    src niteliği ile gömülecek sitenin url'si verilir
+    width ve height niteliği ilede boyutu belirlenir
+
+    iframe elementinin css özellikleri değiştirilebilir
+
+    hyperlink target'ı iframe olarak ayarlanırsa iframe elementinde gömülü site değiştirilebilir
+    bunun için iframe'in name niteliği belirlenmelidir
+-->
+<html>
+    <head>
+        <style>
+            #iframe_section {
+                width: 50%;
+                height: 50%;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe id="iframe_section" src="http://example.com" title="deneme" name="example"></iframe>
+        <a href="http://example4.com" target="example">example4</a>
+    </body>
+</html>
