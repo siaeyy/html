@@ -1,0 +1,24 @@
+<!--
+    web sayfalarına ses içeriği eklemek için audio elementi kullanılır,
+    video elementiyle aynıdır
+
+    nitelikler:
+
+    autoplay:
+    autoplay ile seslerin sayfa yüklendikten hemen sonra başlaması sağlanabilir
+
+    muted:
+    sesin susturulmuş şekilde başlamasını sağlamak için
+
+    controls:
+    ses için kontrollerin bulunması için (durdur butonu, süre çubuğu vs...)
+-->
+<html>
+    <body>
+        <audio controls autoplay muted>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Tarayıcın ogg ve mp3 desteklemiyor
+        </audio>
+    </body>
+</html>
