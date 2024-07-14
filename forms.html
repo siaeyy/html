@@ -86,3 +86,132 @@
         </form>
     </body>
 </html>
+
+<!--
+    input name niteliği forma girilen değerin key'idir
+
+    input'un farklı türleri (type niteliği değerleri) var:
+
+    text:
+    tek satır metin girdisi için
+
+    password:
+    şifre girdisi için
+
+    submit:
+    form girdilerini form işleyicisine iletmek için bir buton 
+
+    reset:
+    form girdilerini varsayılan değerlerine sıfırlar (value niteliğine)
+
+    radio:
+    seçilebilir değerler şeklinde elementler oluşturur
+    aynı name niteliğine bağlı elementlerden sadece 1'i seçilebilir
+
+    checkbox:
+    radio gibi ama birden fazla seçilebilir elemente izin verir
+
+    button:
+    button elementi
+
+    color:
+    renk seçmek girdisi vermek için
+
+    date:
+    tarih seçmek girdisi vermek için
+    min niteliği ile seçilebilir en geri tarih seçilebilir
+    max niteliği ile seçilebilir en ileri tarih seçilebilir
+
+    datetime-local:
+    time-zone olmadan saat içeren bir tarih girdisi vermek için
+
+    email:
+    email adresi girdisi vermek için
+
+    image:
+    basılabilir bir resim elementi oluşturur, basıldığında basılan yerin konumunu forma iletir
+    src niteliği ile resmin yolu belirtilir
+
+    file:
+    dosya girdisi vermek için
+
+    hidden:
+    forma kullanıcılar tarafından görülmeyen veriler göndermek için
+
+    month:
+    bir yılın bir ayını girdi olarak vermek için
+
+    number:
+    sayı girdisi vermek için
+    min niteliği ile girilebilecek minimum sayı değeri, max niteliği ilede girilebilecek maksimum sayı değeri belirlenir
+
+    range:
+    bir aralıktan kaydırılarak bir girdi vermek için
+    varsayılan olarak min ve max değerleri 0 ve 100'dür
+
+    search:
+    text türü ile aynıdır
+
+    tel:
+    telefon numarası girdisi almak için
+    pattern niteliğine girilen telefon numarasının geçerli olduğunu kontrol etmek için bir regex ifadesi tanımlanır
+
+    time:
+    time-zone'dan bağımsız bir saat girdisi vermek için
+
+    url:
+    url girdisi vermek için kullanılır
+
+    week:
+    hafta girdisi vermek için
+
+
+
+    Nitelikler (attributes):
+
+    value:
+    input için varsayılan değer 
+
+    readonly:
+    input elementinin değerini sadece okunabilir hale getirir
+
+    disabled:
+    input elementini devre dışı bırakır, tıklanamaz, kopyalanamaz, kullanılamaz
+    form işlenirken input'taki değer görmezden gelinir
+
+    size:
+    metin girişinde kaç karakterin kutu içerisinde görünür olucağını belirler
+    varsayılan olarak 20'dir
+
+    maxlength:
+    metin girdisi için maksimum karakter sayısını belirler
+
+    multiple:
+    çoklu girdi için kullanılır
+    email ve file girdi türü için
+
+    pattern:
+    girdiyi belirli bir şekilde tutmak için regex ifadesi belirler
+    text, date, search, url, tel, email, ve password türleri için kullanılabilir
+
+    placeholder:
+    örnek girdi, kullanıcı girdi girmeden önce görünür
+
+    required:
+    boş bırakılamaz girdiler tanımlamak için
+    text, search, url, tel, email, password, number, checkbox, radio, ve file türü girdilerde kullanılabilir
+
+    step:
+    girdinin arttırma veya azaltma işleminde (buton ile vs...) değişme büyüklüğü
+    number, range, date, datetime-local, month, time ve week türü girdilerde kullanılabilir
+
+    autofocus:
+    bu nitelik ile sayfa ilk yüklendiğinde girdi fokuslanmayı sağlar (girdiye tıklanmış gibi olur)
+
+    autocomplete:
+    bu nitelik on olarak tanımlanırsa tarayıcı girdiye girilen değere göre otomatik olarak önceden girilen değerlerden önerir
+-->
+
+<!--
+    INPUT_FORM_ATTRIBUTES
+-->
