@@ -1,0 +1,35 @@
+<!--
+    canvas elementi grafikler oluşturup işlemek için kullanılan bir elementtir
+    çizim yapmak için javascript kullanılmalıdır
+
+-->
+<html>
+    <body>
+        <canvas id="canvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+
+    </body>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        context.moveTo(0, 0); //kalemi bu noktaya getirir
+        context.lineTo(200, 100); //kalemin olduğu noktadan bu noktaya çizgi çizer
+        context.stroke(); //çizilen çizgiyi canvasa yansıtır
+
+        context.beginPath(); //yeni bir path (yol - kalem) oluşturur
+        context.arc(300, 300, 100, 0, 2 * Math.PI); //çember çizer parametreler: x, y, çap, başlama açısı (radyan), bitiş açısı (radyan)
+        context.stroke(); //çizilen çemberi canvasa yansıtır
+
+        context.font = "30px Arial"; //font ayarlar
+        context.fillText("Hello World", 10, 50); //içi dolu şekilde metni canvasa yazar
+        context.strokeText("Hello World", 10, 50); //içi boş şekilde metni canvasa yazar
+
+        /*
+         * Draw:
+         * Linear Gradient
+         * Circular Gradient
+         * İmage
+         * 
+         */
+    </script>
+</html>
