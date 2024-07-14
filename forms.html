@@ -1,0 +1,88 @@
+<!--
+    html form elementi kullanıcı girdilerini toplayıp işlemek için kullanılır
+
+    form elementinin nitelikleri:
+    action: girdilerin gönderileceği url
+    target: alınan yanıtın nerede gösterileceği 
+    method: verileri göndermek için http methodu
+    autocomplete: önceden girilen verilerle otomatik tamamlamayı ayarlamak için
+    novalidate: girdilerin doğrulanmamasını sağlar (girdi türüne uyup uymadığının doğrulaması)
+
+    form elementi içersinde kullanılabilecek elementler:
+
+    input: 
+    girdileri almak için
+
+
+    label: 
+    form elementleri için etiket görevi görür
+    for niteliği, etiket görevi görülecek elementin id'siyle aynı olmalıdır
+
+    select:
+    seçilebilir bir liste tanımlar
+    selected niteliği kullanılarak varsayılan değer ayarlanabilir
+    size niteliği ile gözükür seçeneklerin sayısı belirlenir
+    multiple niteliği kullanılarak birden fazla seçeneğin seçilebilmesi sağlanır
+
+    textarea:
+    çok satırlı metin girdileri için kullanılır
+    rows niteliği ile satır sayısı, cols niteliği ile sütun sayısı belirlenebilir
+
+    button:
+    tıklanabilir bir buton oluşturmak için kullanılır
+    
+    fieldset:
+    bir formdaki elementleri gruplandırmak için kullanılır
+
+    legend:
+    fieldset'e başlık tanımlamak için kullanılır
+
+    datalist:
+    input elementi için önceden tanımlanmışsın seçenek listesi sunar
+    id'si input elementinin list niteliğine girilmelidir
+
+    output:
+    form içerisinde çıktıyı işlemek için bir element
+
+    option:
+    datalist ve select elementlerine veri girmek için
+
+    optgroup:
+    select elementindeki verileri gruplandırmak için
+-->
+<html>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Başlık</legend>
+
+                <label for="example">Deneme</label>
+                <input id="example" list="liste">
+    
+                <select size="4" multiple selected>
+                    deneme1
+                    <option value="deneme2">2</option>
+                    <option value="deneme3">3</option>
+                    <optgroup label="Son 2">
+                        <option value="deneme4">4</option>
+                        <option value="deneme5">5</option>
+                    </optgroup>
+                </select>
+    
+                <textarea rows="5" cols="5"></textarea>
+                <button type="button">Tıkla</button>
+
+            </fieldset>
+
+            <datalist id="liste">
+                <option value="deneme1">1</option>
+                <option value="deneme2">2</option>
+                <option value="deneme3">3</option>
+                <option value="deneme4">4</option>
+                <option value="deneme5">5</option>
+            </datalist>
+
+            <output id="output"></output>
+        </form>
+    </body>
+</html>
