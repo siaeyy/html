@@ -1,0 +1,25 @@
+<!--
+    web sayfasına video elementi ile video eklenebilir
+    picture'da olduğu gibi bu elementin içerisinde source elementleri tanımlıyoruz,
+    tarayıcı sırayla ilk tanımlayabildiği dosya türündeki kaynağı kullanır
+
+    nitelikler:
+
+    autoplay:
+    autoplay ile videoların sayfa yüklendikten hemen sonra başlaması sağlanabilir
+
+    muted:
+    videoların sesleri susturulmuş şekilde başlamasını sağlamak için
+
+    controls:
+    video içerisinde kontrollerin bulunması için (durdur butonu, süre çubuğu vs...)
+-->
+<html>
+    <body>
+        <video width="320" height="240" controls autoplay muted>
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+            Tarayıcın mp4 ve ogg desteklemiyor
+        </video>
+    </body>
+</html>
