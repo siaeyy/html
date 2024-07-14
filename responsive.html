@@ -1,0 +1,36 @@
+<!--
+    responsive tasarım farklı boyutlarda ekran ve cihazlarda web sitesinin bunlara göre değişim göstermesidir
+
+    responsive bir site elde etmek için viewport meta değeri düzenlenebilir
+
+    elementlerin boyutlarında %'lik ifade kullanılarak ekran boyutuna göre değişen elementler elde edilebilir
+    resimlerde max-width ayarlanarak resmin boyutuna göre boyutlandırma yapılabilir
+    metinlerde font-size değeri vw (viewport width) olarak verilerek responsive metinler elde edilebilir
+
+    media querie (medya sorguları) ile de responsive siteler oluşturulabilir
+    verilen koşulda css sınıfları değiştirilebilir
+-->
+<html>
+    <head>
+        <style>
+            .deneme
+            {
+                background-color: green;
+            }
+
+            @media screen and (max-width: 800px)
+            {
+                .deneme
+                {
+                    background-color: red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="deneme">
+            <img src="https://t3.ftcdn.net/jpg/00/92/53/56/360_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg" style="max-width:100%;height:auto;">
+            <p style="font-size:10vw;">Merhaba</p>
+        </div>
+    </body>
+</html>
